@@ -36,76 +36,59 @@ export default function Header() {
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList>
             <NavigationMenuItem>
-              <Link href="/" legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={cn(
-                    navigationMenuTriggerStyle(),
-                    isActive("/") && pathname === "/" && "bg-accent"
-                  )}
-                >
-                  Home
-                </NavigationMenuLink>
-              </Link>
+              <NavigationMenuLink
+                href="/"
+                className={cn(
+                  navigationMenuTriggerStyle(),
+                  isActive("/") && pathname === "/" && "bg-accent"
+                )}
+              >
+                Home
+              </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/about" legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={cn(
-                    navigationMenuTriggerStyle(),
-                    isActive("/about") && "bg-accent"
-                  )}
-                >
-                  About
-                </NavigationMenuLink>
-              </Link>
+              <NavigationMenuLink
+                href="/about"
+                className={cn(
+                  navigationMenuTriggerStyle(),
+                  isActive("/about") && "bg-accent"
+                )}
+              >
+                About
+              </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/features" legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={cn(
-                    navigationMenuTriggerStyle(),
-                    isActive("/features") && "bg-accent"
-                  )}
-                >
-                  Features
-                </NavigationMenuLink>
-              </Link>
+              <NavigationMenuLink
+                href="/features"
+                className={cn(
+                  navigationMenuTriggerStyle(),
+                  isActive("/features") && "bg-accent"
+                )}
+              >
+                Features
+              </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/contact" legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={cn(
-                    navigationMenuTriggerStyle(),
-                    isActive("/contact") && "bg-accent"
-                  )}
-                >
-                  Contact
-                </NavigationMenuLink>
-              </Link>
+              <NavigationMenuLink
+                href="/contact"
+                className={cn(
+                  navigationMenuTriggerStyle(),
+                  isActive("/contact") && "bg-accent"
+                )}
+              >
+                Contact
+              </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/IpInfo" legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={cn(
-                    navigationMenuTriggerStyle(),
-                    isActive("/IpInfo") && "bg-accent"
-                  )}
-                >
-                  IP Info
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/test-error" legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={cn(
-                    navigationMenuTriggerStyle(),
-                    isActive("/test-error") && "bg-accent"
-                  )}
-                >
-                  Test Error
-                </NavigationMenuLink>
-              </Link>
+              <NavigationMenuLink
+                href="/IpInfo"
+                className={cn(
+                  navigationMenuTriggerStyle(),
+                  isActive("/IpInfo") && "bg-accent"
+                )}
+              >
+                IP Info
+              </NavigationMenuLink>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
