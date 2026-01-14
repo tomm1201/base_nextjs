@@ -10,7 +10,7 @@ type ApiError = {
 }
 
 export const api: AxiosInstance = axios.create({
-  baseURL: (import.meta.env.VITE_API_URL as string | undefined)?.trim() || undefined,
+  baseURL: (process.env.NEXT_PUBLIC_IPINFO_HOST as string | undefined)?.trim() || undefined,
   timeout: 10_000,
   headers: {
     Accept: 'application/json'
